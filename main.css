@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Notable&display=swap');
+
+/* Name Style */
+.name {
+  font-family: 'Notable', sans-serif !important;
+}
+
+/* Body Font */
+body {
+  font-family: 'MuseoModerno', cursive;
+  position: relative;
+}
+
+.active {
+  color: red!important;
+}
