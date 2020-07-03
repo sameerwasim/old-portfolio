@@ -41,5 +41,13 @@ a {
   font-size: 1.3em;
 }
 #home .card {
-  padding: 7em 0em;
+  padding: 6.7em 0em;
+}
+
+#about {
+  min-height: 80%;
+}
+
+.hide {
+  display: none;
 }

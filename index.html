@@ -21,17 +21,17 @@
   </head>
   <body class="bg">
 
-    <nav class="navbar navbar-expand-md sticky-top">
+    <nav class="navbar navbar-expand-md">
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <small><i class="fa fa-bars"></i></small>
+        <small><i class="text-white fa fa-bars"></i></small>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home">Home</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" id="homeClick">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about" id="aboutClick">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Portfolio</a>
@@ -49,16 +49,38 @@
           <center>
             <div class="display-2 animate__animated animate__fadeInLeft animate__slower">Hello, I'm Sameer</div>
             <div class="ml-2 mt-2 animate__animated animate__fadeInRight animate__slower">
-              <p>
+              <p><h5>
                 <span class="d-inline">Full-Stack Web Developer</span>
                 <span class="d-inline text-danger">&nbsp; / &nbsp;</span>
                 <span class="d-inline">C#.net Developer</span>
                 <span class="d-inline text-danger">&nbsp; / &nbsp;</span>
                 <span class="d-inline">Python Developer</span>
-              </p>
+              </h5></p>
             </div>
-            <button type="button" class="btn btn-outline-danger rounded-pill animate__animated animate__jackInTheBox animate__slower" name="button">About Me</button>
+            <a href="#about" id="aboutClick"><button type="button" class="btn btn-outline-danger rounded-pill animate__animated animate__jackInTheBox animate__slower" name="button">About Me</button></a>
           </center>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="container py-5 my-auto hide">
+      <div class="card bg-transparent rounded-0 border-danger">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3">
+              <center><img src="./images/me.jpg" alt="Me" class="rounded-circle mb-3" height="150em"></center>
+              <h3>Sameer Waseem</h3>
+              <div class="info">
+                <small><i class="fa fa-envelope"></i> &nbsp; sameerwaseem01@gmail.com</small><br>
+                <small><i class="fa fa-phone"></i> &nbsp; +92301-4239116</small><br>
+                <small><i class="fa fa-map-marker"></i> &nbsp; Lahore, Pakistan</small><br>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <h4>About Me:</h4>
+              <p></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,6 +90,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        //Change to about
+        $("#aboutClick").click(function() {
+          $("#about").removeClass("animate__animated animate__zoomIn animate__slower");
+          $("#about").removeClass("animate__animated animate__zoomOut animate__slower");
+          $("#homeClick").removeClass("active");
+          $("#aboutClick").addClass("active");
+          $("#home").addClass("animate__animated animate__zoomOut animate__slower").delay(1000);
+          $("#home").addClass("hide");
+          $("#about").removeClass("hide");
+          $("#about").addClass("animate__animated animate__zoomIn animate__slower");
+        });
+        $("#homeClick").click(function() {
+          $("#home").removeClass("animate__animated animate__zoomIn animate__slower");
+          $("#home").removeClass("animate__animated animate__zoomOut animate__slower");
+          $("#homeClick").addClass("active");
+          $("#aboutClick").removeClass("active");
+          $("#about").addClass("animate__animated animate__zoomOut animate__slower").delay(1000);
+          $("#about").addClass("hide");
+          $("#home").removeClass("hide");
+          $("#home").addClass("animate__animated animate__zoomIn animate__slower");
+        });
+      });
+    </script>
+
 
   </body>
 </html>
