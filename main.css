@@ -9,6 +9,7 @@ html, body {
 
 .active {
   color: var(--red)!important;
+  border: 1px solid var(--red);
 }
 
 .bg {
