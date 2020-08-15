@@ -1,121 +1,46 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <!-- Required meta tags -->
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./main.css">
-
-    <!-- Animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <title>Sameer - Portfolio</title>
+    <!-- Title -->
+    <title>Sameer Waseem</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assests/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assests/css/style.css">
   </head>
-  <body class="bg">
+  <body>
 
-    <nav class="navbar navbar-expand-md">
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <small><i class="text-white fa fa-bars"></i></small>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home" id="homeClick">Home</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about" id="aboutClick">About</a>
+            <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
       </div>
     </nav>
+    <!-- Navbar -->
 
-    <div id="home" class="container py-5 my-auto">
-      <div class="card bg-transparent rounded-0 border-danger">
-        <div class="card-body">
-          <center>
-            <div class="display-2 animate__animated animate__fadeInLeft animate__slower">Hello, I'm Sameer</div>
-            <div class="ml-2 mt-2 animate__animated animate__fadeInRight animate__slower">
-              <p><h5>
-                <span class="d-inline">Full-Stack Web Developer</span>
-                <span class="d-inline text-danger">&nbsp; / &nbsp;</span>
-                <span class="d-inline">C#.net Developer</span>
-                <span class="d-inline text-danger">&nbsp; / &nbsp;</span>
-                <span class="d-inline">Python Developer</span>
-              </h5></p>
-            </div>
-            <a href="#about" id="aboutClick"><button type="button" class="btn btn-outline-danger rounded-pill animate__animated animate__jackInTheBox animate__slower" name="button">About Me</button></a>
-          </center>
-        </div>
-      </div>
-    </div>
 
-    <div id="about" class="container py-5 my-auto hide">
-      <div class="card bg-transparent rounded-0 border-danger">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-lg-3">
-              <center><img src="./images/me.jpg" alt="Me" class="rounded-circle mb-3" height="150em"></center>
-              <h3>Sameer Waseem</h3>
-              <div class="info">
-                <small><i class="fa fa-envelope"></i> &nbsp; sameerwaseem01@gmail.com</small><br>
-                <small><i class="fa fa-phone"></i> &nbsp; +92301-4239116</small><br>
-                <small><i class="fa fa-map-marker"></i> &nbsp; Lahore, Pakistan</small><br>
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <h4>About Me:</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="assests/vendor/jquery/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        //Change to about
-        $("#aboutClick").click(function() {
-          $("#about").removeClass("animate__animated animate__zoomIn animate__slower");
-          $("#about").removeClass("animate__animated animate__zoomOut animate__slower");
-          $("#homeClick").removeClass("active");
-          $("#aboutClick").addClass("active");
-          $("#home").addClass("animate__animated animate__zoomOut animate__slower").delay(1000);
-          $("#home").addClass("hide");
-          $("#about").removeClass("hide");
-          $("#about").addClass("animate__animated animate__zoomIn animate__slower");
-        });
-        $("#homeClick").click(function() {
-          $("#home").removeClass("animate__animated animate__zoomIn animate__slower");
-          $("#home").removeClass("animate__animated animate__zoomOut animate__slower");
-          $("#homeClick").addClass("active");
-          $("#aboutClick").removeClass("active");
-          $("#about").addClass("animate__animated animate__zoomOut animate__slower").delay(1000);
-          $("#about").addClass("hide");
-          $("#home").removeClass("hide");
-          $("#home").addClass("animate__animated animate__zoomIn animate__slower");
-        });
-      });
-    </script>
-
-
+    <script src="assests/vendor/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
