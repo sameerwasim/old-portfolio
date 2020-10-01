@@ -119,18 +119,22 @@ header {
 }
 
 /* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em 2em;
+}
 @media (min-width: 450px) {
-  .footer {
+  .footer-long {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 1em 2em;
   }
 }
-.footer a {
+.footer a, .footer-long a {
   color: #000000;
-}
-.footer a {
   margin: 0em 0.5em;
 }
 
@@ -193,8 +197,31 @@ header {
   }
 }
 
-/* Tech text - page */
+/* Tech page */
 .tech-text {
   font-size: 1.1em;
   margin-top: 1em;
+}
+.tech-list-inline .list-inline-item {
+  margin: 0.5rem 2rem;
+}
+
+/* Contact page */
+.contact-text {
+  font-size: 1.1em;
+  margin-top: 1rem;
+}
+.contact-list-inline .list-inline-item a {
+  margin: 0.5rem 2rem;
+  color: #000000;
+}
+
+/* About Page */
+.about-text {
+  font-size: 1.1em;
+}
+
+/* Services Page */
+.services-text {
+  font-size: 1.1em;
 }
