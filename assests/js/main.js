@@ -14,4 +14,11 @@ $(document).ready(function(){
     $('.skills-text').addClass("typewriter-animation");
   });
 
+  $('.closebtn').click(function(){
+    $('#myNav').css("width", "0%");
+  });
+  $('.bar-btn').click(function(){
+    $('#myNav').css("width", "74%");
+  });
+
 });
